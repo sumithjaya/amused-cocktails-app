@@ -1,0 +1,89 @@
+.cocktail-card {
+  width: 350px;
+  height: 450px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.cocktail-card-body {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 350px;
+}
+.cocktail-card-body img {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+
+.cocktail-card-body img:hover {
+  scale: 1.1;
+  filter: saturate(200%);
+}
+
+.cocktail-card-body h2 {
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+  color: #fff;
+  text-shadow: 2px 2px #1b1b1b;
+}
+
+.cocktail-card-body .category-badge {
+  border: 1px solid #fff;
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  text-shadow: 2px 2px #1b1b1b;
+  background-color: #000000;
+}
+
+.favorite-icon-container svg {
+  position: absolute;
+  top: 20px;
+  right: 230px;
+  z-index: 200;
+}
+
+.btn-remove-favorites {
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.btn-remove-favorites:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .cocktail-card {
+    width: 300px;
+    height: 400px;
+  }
+
+  .cocktail-card-body {
+    width: 300px;
+  }
+  .cocktail-card-body img {
+    width: 300px;
+    height: 400px;
+  }
+}

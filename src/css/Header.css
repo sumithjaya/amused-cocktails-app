@@ -1,0 +1,68 @@
+.header-container {
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 150px;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header-title img {
+  height: 50px;
+  fill: #fff;
+}
+
+.header-title h1 {
+  margin: 0;
+  border-left: 2px solid #8a1804;
+  padding-left: 15px;
+  margin-left: 10px;
+}
+
+.btn-my-favorites button {
+  color: #ffffff;
+  border: 1px solid #fff;
+  width: 150px;
+  background: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  transition: all 0.5s ease;
+  font-size: 16px;
+}
+
+.btn-my-favorites button:hover {
+  background-color: #fff;
+  color: #8a1804;
+}
+@media only screen and (max-width: 600px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .header-title img {
+    height: 50px;
+    fill: #fff;
+  }
+}

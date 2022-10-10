@@ -1,0 +1,85 @@
+.search-results-block {
+  background-color: #242424;
+  padding: 50px 100px;
+}
+
+.search-results-header h4 span {
+  font-weight: 600;
+}
+.search-results-header h2 {
+  margin: 0;
+  color: #fff;
+  border-bottom: 2px solid #121212;
+  padding-bottom: 10px;
+}
+
+.search-results-header h4 {
+  margin: 0;
+  color: #fff;
+  margin-top: 10px;
+  font-weight: 100;
+}
+
+.search-results-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-results-content .btn-addto-favorites {
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.search-results-content .btn-addto-favorites:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.search-results-content .cocktail-card-body svg {
+  margin-right: 10px;
+}
+
+.empty-search-results-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.empty-search-results-container h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.empty-search-results-container h2 {
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-results-block {
+    padding: 30px;
+  }
+
+  .search-results-header h2 {
+    text-align: center;
+  }
+
+  .search-results-header h4 {
+    text-align: center;
+  }
+}
